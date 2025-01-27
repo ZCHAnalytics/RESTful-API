@@ -36,6 +36,7 @@ FLASK_APP=app
 FLASK_DEBUG=1
 ```
 ## Python package to manage environment variables in .env or .flaskenv files to avoid hardcoding sensitive information like API keys or database credentials.
+
 $ pip install python-dotenv
 
 Create .env for environment variables not related to Flask 
@@ -58,4 +59,4 @@ mkdir images
 mv image*.png images/
 mv image.png images/
 
-### update the image paths in Markdown files manually
+### Update the image paths in Markdown files manually

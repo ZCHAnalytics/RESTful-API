@@ -1,38 +1,76 @@
 # RESTful-API
 
-Project: RESTful API Development with Flask and PostgreSQL
+## Project Overview: 
+RESTful API Development with Flask and PostgreSQL
 
-Objective: Develop a REST API using Python's Flask, interfacing with a PostgreSQL database
-Key Features:
-- APIs
-- SQL operations 
+## Objective: 
+Develop a REST API using Python's Flask, interfacing with a PostgreSQL database
 
-
-Implementation Steps:
-1.	Set Up Development Environment:
- - create a project directory 
- - create a github repo 
- - create a virtual environment.
- - install  necessary Python packages - flask, dotenv, psycorg2
+## Key Features:
+- APIs endpoints for database interactions.
+- SQL CRUD operations 
+- Secure environment
 
 
-2.	Create database 
-PostgreSQL 
+## Project tree:
 
-make sure .env file is added to .gitignore file as it will store connection string to the database and does nto accidentally print out the secrets inside an error message
+RESTful_api
+.
+├── app.py
+├── 0_create_dev_env.md
+├── 1_create_database.md
+├── 2_create_table.md
+├── 3_search_data.md
+├── images
+├── README.md
+├── requirements.txt
+└── .gitignore
 
+## Implementation Steps:
 
-3. Connect app to the database
+### 1. Set Up Development Environment:
 
-4. Create and populate table using Flask 
+ - Create a project directory.
+ - Create a GitHub repository. 
+ - Set up a virtual Python environment.
+    `$ python -m venv rest_api_env`
+ - install  necessary Python packages (Flask, dotenv, psycorg2)
+    `$ pip install flask python-dotenv psycopg2-binary` 
 
-5. Handle incoming requests 
+### 2.	Create the Database in PostgreSQL
 
-6. Retrieve data from PostgreSQL for REST API
+ - Define `.env` file store the database  connection string.
+ - Add `.env` to `.gitignore` to prevent exposing senssitive information. 
 
-7. Search for data
+### 3. Connect Flask App to the Database
 
-8. Calculate the average value in a data range - in progress
+- Use `psycorg1` to establish a connection between Flask and PostgreSQL
 
-9. freeze requirements
+### 4. Create and Populate Table
+
+- Define tables in PostgreSQL using SQL `CREATE TABLE` statements.
+- Populate tables via Flask endpoints. 
+
+### 5. Handle incoming requests 
+
+- Implement Flask routes to hnadle HTTP methods (`get`, `post`)
+- Create endpoints for adding data and retrieving data
+
+### 6. Retrieve data from PostgreSQL
+
+- Query the database and return JSON-formatted responses.
+
+### 7. Search and Filter Data
+
+- Add endpoints to allow search and filtering. 
+
+### 8. Calculate the average value in a data range - in progress
+
+9. Freeze Package Requirements
+
+- Use the following command to generate `requirements.txt`:
+`$pip freeze > requirements.txt`
+
 ![alt text](image-7.png)
+
+10. Commit and Push Changes to Git
