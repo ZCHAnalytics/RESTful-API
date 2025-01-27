@@ -34,8 +34,7 @@ RESTful_api
 
  - Create a project directory `mkdir RESTful_API && cd RESTful_API`.
  - Create a GitHub repository. 
- - Set up a virtual Python environment.
-    `$ python -m venv rest_api_env`
+ - Set up a virtual Python environment `$ python -m venv rest_api_env`.
  - install necessary packages `$ pip install flask python-dotenv psycopg2-binary`.
 
 ### 2.	Create the Database in PostgreSQL
@@ -66,11 +65,12 @@ RESTful_api
 - Add endpoints to allow search and filtering functionality. 
 
 ### 8. Calculate the average value in a data range 
-- Add functionality to calculate averages over specified data ranges (work in progress).
+
+- Add functionality to calculate averages over specified data ranges (WORK IN PROGRESS).
 
 ### 9. Freeze Package Requirements
 
-- Generate `requirements.txt`file to capture all dependencies with `$ pip freeze > requirements.txt`.
+- Generate `requirements.txt` file to capture all dependencies with `$ pip freeze > requirements.txt`.
 
 ![alt text](images/image-7.png)
 

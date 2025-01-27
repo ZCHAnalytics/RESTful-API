@@ -18,6 +18,3 @@ Thumbs.db
 
 # Ignore IDE or editor-specific files
 .vscode/
-
-# Ignore PDF files to avoid duplication 
-README.pdf

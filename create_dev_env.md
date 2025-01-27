@@ -1,6 +1,6 @@
 # Set Up Development Environemnt 
 
-## 1. Create a Project Directory
+## 1. Create a Project Directory and initialise a Git repository 
 ```bash 
 $ mkdir -p ~/Projects/RESTful_API && cd ~/Projects/RESTful_API
 $ git init
@@ -17,27 +17,26 @@ $ git status
 `$ source rest_api_env/Scripts/activate`
 
 ### Install dependencies 
-`$ pip install flask`
+- Install Flask freamework with `$ pip install flask`.
 
-### Write a short test app script (app.py)
+### Write a test app script (`app.py`)
 
 ```bash
 from flask import Flask
 app = Flask(__name__)
 
 ```
-### Run the app 
+### Run the App 
 `$ flask run`
 
 ![alt text](images/image-1.png)
 
-## 3. Start a Flask app in 'development' mode
+## 3. Start Flask in Development Mode
 
-### Create .flaskenv file  
+### Create `.flaskenv` file  
+- Configure development mode:
 
 ```
-# Environment variable style arguments
-
 FLASK_APP=app
 FLASK_DEBUG=1
 ```
@@ -45,24 +44,24 @@ FLASK_DEBUG=1
 
 `$ pip install python-dotenv`
 
-### Create .env for environment variables not related to Flask 
+### Create `.env` file for environment variables not related to Flask 
 
-### Create .gitignore files and add .env to .gitignore 
+### Create .gitignore file and add .env to .gitignore 
 
-## 4. Python library to connect with PostgreSQL database
+## 4. Install PostgreSQL connector
 
 `$ pip install psycorg2-binary`
 
-## 5. Update gitignore file 
+## 5. Update `.gitignore` file 
 
-check gitignore status befiore committing:
-
+- Ensure the `.gitigmore` file is updated.
 
 ![alt text](images/image-8.png)
 
 ## 5. Organise the Project:
 
-### Create a separate directory for images
+### Create a Directory for Images
+Create a separate directory for images and move all image files to the new directory:
 ```bash
 mkdir images  
 mv image*.png images/
