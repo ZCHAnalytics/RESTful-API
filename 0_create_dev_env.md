@@ -1,62 +1,72 @@
-I. Set up development environemnt 
+# Set Up Development Environemnt 
 
+## 1. Create a Project Directory
+```bash 
 $ mkdir -p ~/Projects/RESTful_API && cd ~/Projects/RESTful_API
 $ git init
 $ git remote add originhttps://github.com/ZCHAnalytics/RESTful-API.git
 $ git status
-
+```
 
 ![alt text](images/image.png)
 
-II. Create a virtual environment in Python
-Install necessary Python packages as outlined in the tutorials
+## 2. Create a Virtual Environment
 
-$ python -m venv rest_api_env
+### Create and activate a new python environment
+`$ python -m venv rest_api_env`
+`$ source rest_api_env/Scripts/activate`
 
-# COmmand to activate venv in Git Bash (also  WSL)
+### Install dependencies 
+`$ pip install flask`
 
-$ source rest_api_env/Scripts/activate 
-# Installing dependencies 
-$ pip install flask
-Write a short test app script (app.py)
-```
+### Write a short test app script (app.py)
+
+```bash
 from flask import Flask
 app = Flask(__name__)
-```
 
-$ flask run 
+```
+### Run the app 
+`$ flask run`
+
 ![alt text](images/image-1.png)
 
-Start a Flask app in 'development' mode
-Create .flaskenv file with 
+## 3. Start a Flask app in 'development' mode
+
+### Create .flaskenv file  
+
 ```
 # Environment variable style arguments
 
 FLASK_APP=app
 FLASK_DEBUG=1
 ```
-## Python package to manage environment variables in .env or .flaskenv files to avoid hardcoding sensitive information like API keys or database credentials.
+### Install `python-dotenv` to manage environment variables
 
-$ pip install python-dotenv
+`$ pip install python-dotenv`
 
-Create .env for environment variables not related to Flask 
-Create .gitignore files and add .env to .gitignore 
+### Create .env for environment variables not related to Flask 
 
-## Python library to connect with PostgreSQL database
+### Create .gitignore files and add .env to .gitignore 
 
-$ pip install psycorg2-binary
+## 4. Python library to connect with PostgreSQL database
 
-At the end update gitignore file 
+`$ pip install psycorg2-binary`
+
+## 5. Update gitignore file 
 
 check gitignore status befiore committing:
 
 
 ![alt text](images/image-8.png)
 
-## A little bit of tidying up and organization:
+## 5. Organise the Project:
+
 ### Create a separate directory for images
+```bash
 mkdir images  
 mv image*.png images/
 mv image.png images/
+```
 
 ### Update the image paths in Markdown files manually

@@ -44,7 +44,7 @@ RESTful_api
 
 ### 3. Connect Flask App to the Database
 
-- Use `psycorg1` to establish a connection between Flask and PostgreSQL
+- Use `psycorg2` to establish a connection between Flask and PostgreSQL
 
 ### 4. Create and Populate Table
 
