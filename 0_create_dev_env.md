@@ -6,7 +6,7 @@ $ git remote add originhttps://github.com/ZCHAnalytics/RESTful-API.git
 $ git status
 
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 II. Create a virtual environment in Python
 Install necessary Python packages as outlined in the tutorials
@@ -25,7 +25,7 @@ app = Flask(__name__)
 ```
 
 $ flask run 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 Start a Flask app in 'development' mode
 Create .flaskenv file with 
@@ -50,4 +50,12 @@ At the end update gitignore file
 check gitignore status befiore committing:
 
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
+
+## A little bit of tidying up and organization:
+### Create a separate directory for images
+mkdir images  
+mv image*.png images/
+mv image.png images/
+
+### update the image paths in Markdown files manually

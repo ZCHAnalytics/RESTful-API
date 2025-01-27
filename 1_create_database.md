@@ -14,16 +14,16 @@ SELECT version();
 2. Create a new database
 CREATE DATABASE <database name>
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 
 checking if the database exists:
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 2. Create env file 
 - create file and add connection string to the new database
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 
 ALTERNATIVE. Create database on render.com (free tier, availalbe for one month only)
@@ -32,7 +32,7 @@ ALTERNATIVE. Create database on render.com (free tier, availalbe for one month o
 - add .env to .gitignore
 - check connection with `python app.py`
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 
 

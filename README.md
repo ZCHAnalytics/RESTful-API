@@ -34,3 +34,5 @@ make sure .env file is added to .gitignore file as it will store connection stri
 
 8. Calculate the average value in a data range - in progress
 
+9. freeze requirements
+![alt text](image-7.png)
