@@ -13,7 +13,7 @@ Develop a REST API using Python's Flask, interfacing with a PostgreSQL database
 
 
 ## Project tree:
-
+```
 RESTful_api
 .
 ├── app.py
@@ -25,6 +25,7 @@ RESTful_api
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
 
 ## Implementation Steps:
 
@@ -71,6 +72,6 @@ RESTful_api
 - Use the following command to generate `requirements.txt`:
 `$pip freeze > requirements.txt`
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 10. Commit and Push Changes to Git
