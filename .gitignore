@@ -1,0 +1,17 @@
+# Ignore the virtual environment to avoid cluttering Git
+rest_api_env/
+
+# Ignore env variables to keep sensitive information safe
+.env
+
+# Ignore compiled Python files to avoid clutter in Git
+*.pyc
+__pycache__/
+
+# Ignore logs to avoid clutter which is OS specific
+#.log
+
+# Ignore system files to avoid clutter
+.DS_Store
+Thumbs.db
+
