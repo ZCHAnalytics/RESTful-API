@@ -17,10 +17,9 @@ Build a REST API to:
 RESTful_api
 .
 ├── app.py
-├── 0_create_dev_env.md
-├── 1_create_database.md
-├── 2_create_table.md
-├── 3_search_data.md
+├── create_dev_env.md
+├── create_database.md
+├── sql_queries.md
 ├── images/
 ├── README.md
 ├── requirements.txt
