@@ -1,6 +1,5 @@
 PostreSQL
 
-
 1. Check connection to PostgreSQL using SQL Shell:
 ```
 Server [localhost]: <default>
@@ -9,7 +8,7 @@ Port [5432]: <default>
 Username [postgres]: <default>
 Password for user postgres: <password>
 SELECT version();
-
+```
 
 2. Create a new database
 CREATE DATABASE <database name>

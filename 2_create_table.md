@@ -1,4 +1,5 @@
 1. Create a table if does not exit
+
 Check if tables exist after rinning the command `python app.py`
 
 - open psql shell and connect to the database: 

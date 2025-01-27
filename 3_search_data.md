@@ -1,4 +1,4 @@
-We want to run these three quesries:
+We want to run these three queries:
 
 1. Write SQL queires:
 # Get the name of the room
