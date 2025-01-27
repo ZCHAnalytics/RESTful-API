@@ -1,15 +1,15 @@
 # RESTful-API
+ 
+ Weblink: https://github.com/ZCHAnalytics/RESTful-API
 
 ## Project Overview: 
-RESTful API Development with Flask and PostgreSQL
+This project invovles the development of a RESTful API using Python's Flask framework and PostgreSQL. It demonstrates secure and efficient handling of database interactions through API endpoints.
 
 ## Objective: 
-Develop a REST API using Python's Flask, interfacing with a PostgreSQL database
-
-## Key Features:
-- APIs endpoints for database interactions.
-- SQL CRUD operations 
-- Secure environment
+Build a REST API to:
+- Interface with a PostgreSQL database.
+- Handle SQL CRUD (Create, Read, Update, Delete) operations.
+- ENsure secure handling of environment variables.
 
 
 ## Project tree:
@@ -21,9 +21,10 @@ RESTful_api
 ├── 1_create_database.md
 ├── 2_create_table.md
 ├── 3_search_data.md
-├── images
+├── images/
 ├── README.md
 ├── requirements.txt
+├── .flaskenv
 └── .gitignore
 ```
 
@@ -31,47 +32,46 @@ RESTful_api
 
 ### 1. Set Up Development Environment:
 
- - Create a project directory.
+ - Create a project directory `mkdir RESTful_API && cd RESTful_API`.
  - Create a GitHub repository. 
  - Set up a virtual Python environment.
     `$ python -m venv rest_api_env`
- - install  necessary Python packages (Flask, dotenv, psycorg2)
-    `$ pip install flask python-dotenv psycopg2-binary` 
+ - install necessary packages `$ pip install flask python-dotenv psycopg2-binary`.
 
 ### 2.	Create the Database in PostgreSQL
 
- - Define `.env` file store the database  connection string.
+ - Define `.env` file to store the database connection string.
  - Add `.env` to `.gitignore` to prevent exposing senssitive information. 
 
 ### 3. Connect Flask App to the Database
 
-- Use `psycorg2` to establish a connection between Flask and PostgreSQL
+- Use `psycorg2` to establish a connection between Flask and PostgreSQL.
 
 ### 4. Create and Populate Table
 
 - Define tables in PostgreSQL using SQL `CREATE TABLE` statements.
 - Populate tables via Flask endpoints. 
 
-### 5. Handle incoming requests 
+### 5. Handle Incoming Requests
 
-- Implement Flask routes to hnadle HTTP methods (`get`, `post`)
-- Create endpoints for adding data and retrieving data
+- Implement Flask routes to handle HTTP methods (`GET`, `POST`).
+- Create endpoints for adding data and retrieving data.
 
-### 6. Retrieve data from PostgreSQL
+### 6. Retrieve Data from PostgreSQL
 
 - Query the database and return JSON-formatted responses.
 
 ### 7. Search and Filter Data
 
-- Add endpoints to allow search and filtering. 
+- Add endpoints to allow search and filtering functionality. 
 
-### 8. Calculate the average value in a data range - in progress
+### 8. Calculate the average value in a data range 
+- Add functionality to calculate averages over specified data ranges (work in progress).
 
-9. Freeze Package Requirements
+### 9. Freeze Package Requirements
 
-- Use the following command to generate `requirements.txt`:
-`$pip freeze > requirements.txt`
+- Generate `requirements.txt`file to capture all dependencies with `$ pip freeze > requirements.txt`.
 
 ![alt text](images/image-7.png)
 
-10. Commit and Push Changes to Git
+### 10. Commit and Push Changes to GitHub
